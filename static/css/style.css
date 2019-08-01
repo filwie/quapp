@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+}
+
+.bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quote {
+    color: white;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+#author {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.2em;
+    font-style: normal;
+}
