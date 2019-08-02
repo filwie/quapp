@@ -15,7 +15,7 @@ html, body {
 }
 
 .quote {
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 50%;
