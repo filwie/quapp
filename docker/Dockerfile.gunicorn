@@ -1,0 +1,12 @@
+FROM python:3.7.4-alpine
+ARG app_dir=/opt/quapp
+
+RUN mkdir -p "${app_dir}"
+WORKDIR "${app_dir}"
+
+COPY . .
+
+RUN pip install -r requirements.txt \
+        && pip install gunicorn
+
+CMD ["gunicorn"  , "-b", "0.0.0.0:8000", "app:app"]
